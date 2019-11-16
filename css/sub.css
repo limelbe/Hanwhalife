@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* 모든 서브 공통 스타일 */
+.area {position: relative;}
+.main_bg {background: no-repeat center top;}
+
+/* .main_bg */
+.about .main_bg {width: 100%; height: 260px; text-align: center; background-image: url(../images/about/tit_head_bg.jpg); color: #fff;}
+.main_bg .title {padding: 77px 0 24px 0; font-size: 56px; font-weight: 300; letter-spacing: -1px;}
+.main_bg p {letter-spacing: -0.75px;}
+
+/* .tit_box */
+.tit_box {width: 100%; height: 90px; border-bottom: 1px solid #ccc;}
+.tit_box .area .sub_tit {line-height: 90px; font-size: 34px; letter-spacing: -1.9px; font-weight: 200; color: #333; text-align: center;}
+.tit_box .area a {position: absolute; height: 50px; line-height: 50px; top: 20px; color: #999;}
+.tit_box .area a.btn_l {left: 0; background: url(../images/common/tit_menu_prev.png) no-repeat left top; padding-left: 65px;}
+.tit_box .area a.btn_r {right: 0; background: url(../images/common/tit_menu_next.png) no-repeat 99% top; padding-right: 65px;}
+.tit_box .area a.btn_l:hover, .tit_box .area a.btn_l:focus {background: url(../images/common/tit_menu_prev_on.png) no-repeat left top;}
+.tit_box .area a.btn_r:hover, .tit_box .area a.btn_r:focus {background: url(../images/common/tit_menu_next_on.png) no-repeat 99% top;}
+
+
+/* .intro */
+.intro {position: relative; width: 100%; height: 460px; margin: 67px 0 72px 0; background: url(../images/about/service_intro_bg.jpg) no-repeat center center;}
+.intro .txt_box {position: absolute; top: 72px; left: 69px; width: 360px; height: 320px; background: rgba(241,91,71,0.9); padding: 48px 0 30px 30px; box-sizing: border-box; color: #fff;}
+.intro .txt_box h4 {display: inline-block; font-size: 30px; font-weight: 300;  border-bottom: 2px solid #fff; padding-bottom: 8px; margin-bottom: 13px;} 
+.intro .txt_box p {margin-top: 9px; line-height: 26px;}
+
+
+/* .sol .tip 공통 */
+.sol_tit {float: left; width: 400px; font-size: 30px; line-height: 42px; letter-spacing: -2px; color: #333; font-weight: 200;}
+.sol_box {float: right; width: 780px;}
+.sol_box .box {float: left; width: 50%;}
+
+/* .sol */
+.sol .area {padding: 70px 0 26px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
+.sol .sol_box .box .sol_num {display: inline-block; width: 69px; font-size: 30px; font-weight: 500; color: #f15b47; box-sizing: border-box; vertical-align: top;}
+.sol .sol_box .box .sol_txt {display: inline-block; padding-bottom: 40px; line-height: 24px;}
+
+/* tip */
+.tip {margin-bottom: 64px;}
+.tip .area {padding: 70px 0 26px 0;}
+.tip .box {padding: 9px; box-sizing: border-box;}
+.tip .box:nth-child(2n+1) {padding-left: 0;}
+.tip .box:nth-child(2n) {padding-right: 0;}
+.tip .box img {display: block; width: 100%;}
+.tip .box p {text-align: center; padding: 17px 0 58px 0;}
+
+
+/* .banner */
+.banner {width: 100%;}
+.banner > a {display: block; float: left; width: 50%; height: 220px; background: #000;}
+.banner .apply {background: url(../images/common/aside01.jpg) no-repeat right center;}
+.banner .qa {background: url(../images/common/aside02.jpg) no-repeat left center;}
+
+
+/* About : 브랜드 스토리 */
+
+/* About : 역할 및 서비스 */
+
+/* Program : Career */

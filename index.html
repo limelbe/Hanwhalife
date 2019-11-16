@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>한화생명 리즈</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#fullpage").fullpage({
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Hanwha Life 리즈', 'ABOUT 리즈', 'footer']
+                //scrollBar : true //스크롤바 유무
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- 스킵네이게이션은 문서의 최상위에 위치해야 한다. 단, 자동실행되는 3초이상의 동영상이 있을 경우 동영상을 제어할 수 있는 버튼이 스킵보다 먼저 나온다. -->
+    <div id="skip"><a href="#fullpage">본문 바로가기</a></div>
+    
+    <div id="wrap">
+        <div id="headerWrap">
+            <header id="header">
+                <h1 class="logo p_a"><a href="#"><img src="images/common/logo.png" alt="한화생명 리즈"></a></h1>
+                <nav id="gnb">
+                    <h2 class="blind">주메뉴</h2>
+                    <ul>
+                        <li class="gnb1">
+                            <a href="#">About</a>
+                            <ul>
+                                <li><a href="#">브랜드 스토리</a></li>
+                                <li><a href="about/service.html">역할 및 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb2">
+                            <a href="#">Program</a>
+                            <ul>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb3">
+                            <a href="#">Recruit</a>
+                            <ul>
+                                <li><a href="#">LG 선발 프로세스</a></li>
+                                <li><a href="#">지원하기</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb4">
+                            <a href="#">Q&amp;A</a>
+                            <ul>
+                                <li><a href="#">자주 묻는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="shortcut p_a">지원하기</a>
+            </header>
+        </div>
+
+        <div id="fullpage">
+            <section class="section " id="cnt1">
+                <div class="cnt">
+                    <h2><img src="images/main/category_title01.png" alt=""></h2>
+                    <p>삶의 주인공이 될 당신을 기다립니다</p>
+                    <strong>다시, 리즈</strong>
+                    <span>한화생명 리즈와 함께, 당신의 열정에 도전하세요.</span>
+                    <div class="btn">
+                        <a href="#" class="h48">
+                            <span>지원하기</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="icon_wheel">
+                    <span class="top"></span>
+                    <span class="btm"></span>
+                </div>
+            </section>
+
+            <section class="section" id="cnt2">
+                <div class="cnt">
+                    <h2><img src="images/main/category_title02.png" alt=""></h2>
+                    <p>새로운 시작을 특별하게</p>
+                    <strong>라이프 컨설턴트, 리즈</strong>
+                    <span>한 사람, 한 사람의 삶을 생각한<br>
+                        신개념 라이프 컨설턴트를 소개합니다.</span>
+                    <div class="btn effect">
+                        <a href="#">
+                            <span>Brand<br>Story</span>
+                        </a>
+                        <a href="#">
+                            <span>역할 및<br>서비스</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="icon_wheel">
+                    <span class="top"></span>
+                    <span class="btm"></span>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height">
+                <footer id="footer">
+                    <div class="f_l">
+                        <address>서울시 영등포구 63로 50 (여의도동, 63 한화생명빌딩) 한화생명보험 주식회사 대표이사 차남규 대표전화 1588-6363</address>
+                        <p>COPYRIGHT&copy; HANWHALIFE. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <ul class="f_r">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보취급방침</a></li>
+                    </ul><a href="" class="top_btn p_a">TOP</a>
+                </footer>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

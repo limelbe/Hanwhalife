@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+@font-face{
+    font-family: NotoKR;
+    font-weight: 200;
+    src: url("../fonts/NotoSansKR-Light.eot");
+    src: local("※"), 
+        url("../fonts/NotoSansKR-Light.woff2") format("woff2"),
+        url("../fonts/NotoSansKR-Light.woff") format("woff"),
+        url("../fonts/NotoSansKR-Light.otf") format("opentype");
+}
+@font-face{
+    font-family: NotoKR;
+    font-weight: 300;
+    src: url("../fonts/NotoSansKR-DemiLight.eot");
+    src: local("※"),
+        url("../fonts/NotoSansKR-DemiLight.woff2") format("woff2"),
+        url("../fonts/NotoSansKR-DemiLight.woff") format("woff"),
+        url("../fonts/NotoSansKR-DemiLight.otf") format("opentype");
+}
+@font-face{
+    font-family: NotoKR;
+    font-weight: 500;
+    src: url("../fonts/NotoSansKR-Regular.eot");
+    src: local("※"),
+        url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),
+        url("../fonts/NotoSansKR-Regular.woff") format("woff"),
+        url("../fonts/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family: NotoKR;
+    font-weight: 700;
+    src: url("../fonts/NotoSansKR-Medium.eot");
+    src: local("※"),
+        url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),
+        url("../fonts/NotoSansKR-Medium.woff") format("woff"),
+        url("../fonts/NotoSansKR-Medium.otf") format("opentype");
+}
+
+
+/* reset */
+* {margin: 0; padding: 0;}
+body {font-family: NotoKR, "맑은 고딕", "Malgun Gothic", sans-serif; font-weight: 200; color: #666; line-height: 1;}
+a {text-decoration: none; color: inherit;}
+ul, li {list-style: none;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;}
+img {vertical-align: top; border: none;}
+header, nav, section, article, footer {display: block;}
+address {font-style: normal;}
+
+
+/* 공통클래스 */
+.f_r {float: right;}
+.f_l {float: left;}
+.p_a {position: absolute;}
+.p_r {position: relative;}
+.clearfix:after {content:''; display: block; clear: both;}
+.blind {font-size: 0; line-height: 0; width: 1px; height: 1px; overflow: hidden; position: absolute; top: 0; left: -9999px; text-indent: -9999px;}
+.area {width: 1180px; margin: 0 auto;}
+#wrap {min-width: 1180px; margin: 0 70px;}
+#header, #content, #banner, #footer {max-width: 1763px; margin: 0 auto;}
+
+
+/* skip 네비게이션 */
+#skip a {position: absolute; top: 0; left: -9999px; z-index: 1000;}
+#skip a:focus {left: 0; width: 100%; height: 40px; background: #ff5c2b; text-align: center; line-height: 40px; color: #fff;}
+
+
+/* 상단 헤더 */
+#header {position: relative; height: 69px; border-bottom: 1px solid #ddd; max-width: 1903px;}
+#header.active:after{content: ""; position: absolute; top: 70px; left: 0; width: 100%; height: 49px; background: #fff;}
+#header .logo {top: 15px; left: 0; z-index: 110; z-index: 100;}
+
+#gnb {position: relative; font-weight: 300;}
+#gnb > ul {width: 426px; height: 69px; margin: 0 auto;}
+#gnb ul li {float: left;}
+#gnb ul li a {display: block;}
+
+#gnb > ul > li {position: relative;}
+#gnb > ul > li + li {margin-left: 73px;}
+#gnb > ul > li > a {font-size: 17px; color: #333; height: 67px; line-height: 67px; border-bottom: 2px solid transparent;}
+#gnb > ul > li:hover > a, #header #gnb > ul > li > a:focus {color: #f15b47; border-color: #f15b47;}
+
+#gnb ul li ul {position: absolute; top: 69px; left: 0; width: 250px; height: 49px; line-height: 49px; z-index: 20; padding-top: 1px;}
+#gnb ul li ul li + li {margin-left: 36px;}
+#gnb ul li ul li:hover a, #header #gnb ul li ul li a:focus, #gnb ul li ul li.on a {color: #333;}
+#gnb ul li ul li a {font-size: 14px; color: #999;}
+
+#header .shortcut {top: 18px; right: 0; border: 2px solid #f15b47; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; width: 96px; height: 34px; color: #f15b47; font-size: 14px; line-height: 30px; background: url(../images/common/icon_support_arrow.png) no-repeat 66px 50%}
+#header .shortcut:hover {background: #f15b47; color: #fff;}
+
+/* footer */
+#footer {position: relative; border-top: 1px solid #ccc; padding-top: 40px; height: 80px; font-size: 13px;}
+#footer div {color: #999;}
+#footer div address {padding-bottom: 9px;}
+#footer ul li {float: left;}
+#footer ul li + li{padding-left: 9px; border-left: 1px solid #aaa; margin-left: 9px;}
+#footer ul li a {color: #333;}
+#footer .top_btn {right: 0; bottom: 0; width: 44px; height: 44px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #ccc; padding-top: 25px; text-align: center; font-size: 12px; background: url("../images/common/icon_topBtn.png") no-repeat 50% 8px; color: #333;}
+#footer .top_btn:hover, #footer .top_btn:focus {background-color: #facec8;}
+
+
+
+

@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+#headerWrap {position: fixed; top: 0; left: 0; right: 0; height: 69px; background: #fff; padding: 0 70px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 900;}
+
+
+/* 본문 공통 */
+section.section {background: no-repeat 50% 0%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; color: #fff; text-align: center;}
+
+section.section .cnt {display: inline-block;}
+section.section .cnt h2 {padding-bottom: 13px; border-bottom: 1px solid rgba(255,255,255,0.5); margin-bottom: 17px;}
+section.section .cnt p {font-size: 44px; letter-spacing: -3px;}
+section.section .cnt strong, section.section .cnt > span {display: block;}
+section.section .cnt strong {padding: 10px 0; font-size: 60px; letter-spacing: -3px;}
+section.section .cnt > span {letter-spacing: -0.8px; font-weight: 200; padding-top: 32px; line-height: 26px;}
+
+section.section .cnt .btn {display: inline-block; margin-top: 55px;}
+section.section .cnt .btn a {position: relative; float: left; display: table; width: 180px; height: 180px; border: 6px solid #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+section.section .cnt .btn a + a {margin-left: 20px;}
+section.section .cnt .btn a span {display: table-cell; vertical-align: middle; line-height: 1.5;}
+section.section .cnt .btn a:hover, section.section .cnt .btn a:focus {background: #ed6551; border-color: #ed6551;}
+
+section.section .icon_wheel {position: absolute; left: 0; right: 0; bottom: 50px; width: 30px; height: 42px; margin: 0 auto; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; border: 1px solid #fff;}
+section.section .icon_wheel span {position: absolute; left: 10px;}
+section.section .icon_wheel .top {width: 10px; height: 6px; background: url(../images/common/arrow_wheel.png) no-repeat; top: 14px; animation: arrow 1s infinite;}
+section.section .icon_wheel .btm {width: 10px; height: 6px; background: url(../images/common/arrow_wheel.png) no-repeat; top: 21px; animation: arrow 1s 0.5s infinite;}
+
+section.section .cnt .btn.effect a:after {content:''; position: absolute; bottom: 70px; left: 0; right: 0; width: 24px; height: 24px; margin: 0 auto; background: url(../images/main/icon_plus.png); -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)'; opacity: 0;}
+
+section.section .cnt .btn.effect a:hover span, 
+section.section .cnt .btn.effect a:focus span {padding-bottom: 50px;}
+section.section .cnt .btn.effect a:hover:after, 
+section.section .cnt .btn.effect a:focus:after {bottom: 40px; -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)'; opacity: 1;}
+
+
+@-webkit-keyframes arrow {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes arrow {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@-o-keyframes arrow {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+@keyframes arrow {
+    0% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+
+
+
+/* 본문1 : 한화라이프 리즈 */
+#cnt1 {background-image: url(../images/main/title_bg01.jpg); background-position: 50% 70px;}
+#cnt1 .btn a.h48 {height: 48px;}
+
+/* 본문2 : about 리즈 */
+#cnt2 {background-image: url(../images/main/title_bg02.jpg);}
+
+/* 공통 transition */
+section.section .cnt .btn a, section.section .cnt .btn a span, section.section .cnt .btn.effect a:after {-webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s;}
+
+
+/* fullpage 인디케이터 */
+#fp-nav.fp-right{right: 100px;}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, #fp-nav ul li:hover a span + span{height: 5px; width: 5px; margin: -2px 0 0 -2px; border: 2px solid #ed6551; background: transparent}
+#fp-nav ul li a span + span{height: 5px; width: 5px; border: 2px solid transparent; background: #fff;}
+
+#fp-nav ul li a.active + .fp-tooltip{opacity: 1;}/* 활성화된 인디케이터의 툴팁은 처음부터 보여지게 하기 */
+
+/* 툴팁 텍스트는 배경이미지 처리 : 가장 큰 이미지의 사이즈를 기준으로 함 */
+#fp-nav ul li .fp-tooltip {width: 126px; height: 21px; line-height: 100; background: no-repeat right center}
+#fp-nav ul li:nth-child(1) .fp-tooltip{background-image: url("../images/main/nav_txt01.png")}
+#fp-nav ul li:nth-child(2) .fp-tooltip{background-image: url("../images/main/nav_txt02.png")}
+
+/* 툴팁에 호버한 경우 가로 크기 제어 */
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip{width: 126px;}
+
+/* footer에 해당하는 인디케이터는 보여지지 않게 */
+#fp-nav ul li:nth-child(3){display: none}
+
+
+
+
+
+
+
